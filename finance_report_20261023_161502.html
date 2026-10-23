@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金融市场数据报表</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .timestamp {
+            text-align: center;
+            color: #888;
+            margin-bottom: 30px;
+        }
+        .section {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .section h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(255,255,255,0.1);
+        }
+        .emoji { font-size: 1.2em; margin-right: 10px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        th {
+            background: rgba(255,255,255,0.1);
+            font-weight: 600;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        tr:hover { background: rgba(255,255,255,0.05); }
+        .positive { color: #00ff88; }
+        .negative { color: #ff4757; }
+        .news-item {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .news-title { font-size: 1em; margin-bottom: 5px; }
+        .news-meta { color: #888; font-size: 0.85em; }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            table { font-size: 0.85em; }
+            th, td { padding: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 金融市场数据报表</h1>
+        <p class="timestamp">生成时间：2026-10-23 16:15:02</p>
+
+        
+
+        
+
+        
+        <div class="section">
+            <h2><span class="emoji">🇺🇸</span>美股热门股票</h2>
+            <table>
+                <tr>
+                    <th>代码</th>
+                    <th>名称</th>
+                    <th>最新价</th>
+                    <th>涨跌幅</th>
+                    <th>涨跌额</th>
+                    <th>成交量</th>
+                </tr>
+                
+                <tr>
+                    <td>AAPL</td>
+                    <td>Apple Inc.</td>
+                    <td>$347.26</td>
+                    <td class="negative">-0.28%</td>
+                    <td>$-0.96</td>
+                    <td>17908026</td>
+                </tr>
+                
+                <tr>
+                    <td>GOOGL</td>
+                    <td>Alphabet Inc.</td>
+                    <td>$323.56</td>
+                    <td class="negative">-0.20%</td>
+                    <td>$-0.66</td>
+                    <td>7297837</td>
+                </tr>
+                
+                <tr>
+                    <td>MSFT</td>
+                    <td>Microsoft Corporation</td>
+                    <td>$524.62</td>
+                    <td class="positive">+0.68%</td>
+                    <td>$+3.54</td>
+                    <td>5500745</td>
+                </tr>
+                
+                <tr>
+                    <td>AMZN</td>
+                    <td>Amazon.com, Inc.</td>
+                    <td>$249.58</td>
+                    <td class="negative">-0.32%</td>
+                    <td>$-0.80</td>
+                    <td>12325686</td>
+                </tr>
+                
+                <tr>
+                    <td>NVDA</td>
+                    <td>NVIDIA Corporation</td>
+                    <td>$212.40</td>
+                    <td class="positive">+0.09%</td>
+                    <td>$+0.19</td>
+                    <td>36242036</td>
+                </tr>
+                
+                <tr>
+                    <td>TSLA</td>
+                    <td>Tesla, Inc.</td>
+                    <td>$372.43</td>
+                    <td class="negative">-0.57%</td>
+                    <td>$-2.15</td>
+                    <td>22024218</td>
+                </tr>
+                
+                <tr>
+                    <td>META</td>
+                    <td>Meta Platforms, Inc.</td>
+                    <td>$645.98</td>
+                    <td class="negative">-0.44%</td>
+                    <td>$-2.87</td>
+                    <td>7528861</td>
+                </tr>
+                
+            </table>
+        </div>
+        
+
+        
+        <div class="section">
+            <h2><span class="emoji">₿</span>加密货币</h2>
+            <table>
+                <tr>
+                    <th>名称</th>
+                    <th>代码</th>
+                    <th>价格(USD)</th>
+                    <th>24h涨跌</th>
+                    <th>7d涨跌</th>
+                    <th>市值(亿)</th>
+                    <th>24h成交量(亿)</th>
+                </tr>
+                
+                <tr>
+                    <td>Bitcoin</td>
+                    <td>BTC</td>
+                    <td>$81,556.00</td>
+                    <td class="positive">+0.04%</td>
+                    <td class="negative">-0.37%</td>
+                    <td>$16,392</td>
+                    <td>$248</td>
+                </tr>
+                
+                <tr>
+                    <td>Ethereum</td>
+                    <td>ETH</td>
+                    <td>$2,402.51</td>
+                    <td class="positive">+0.33%</td>
+                    <td class="negative">-2.14%</td>
+                    <td>$2,935</td>
+                    <td>$116</td>
+                </tr>
+                
+                <tr>
+                    <td>BNB</td>
+                    <td>BNB</td>
+                    <td>$747.25</td>
+                    <td class="positive">+2.34%</td>
+                    <td class="positive">+2.81%</td>
+                    <td>$983</td>
+                    <td>$8</td>
+                </tr>
+                
+                <tr>
+                    <td>XRP</td>
+                    <td>XRP</td>
+                    <td>$1.31</td>
+                    <td class="negative">-0.85%</td>
+                    <td class="negative">-1.18%</td>
+                    <td>$827</td>
+                    <td>$14</td>
+                </tr>
+                
+                <tr>
+                    <td>Solana</td>
+                    <td>SOL</td>
+                    <td>$104.51</td>
+                    <td class="positive">+0.12%</td>
+                    <td class="negative">-0.89%</td>
+                    <td>$616</td>
+                    <td>$22</td>
+                </tr>
+                
+                <tr>
+                    <td>Cardano</td>
+                    <td>ADA</td>
+                    <td>$0.22</td>
+                    <td class="positive">+0.84%</td>
+                    <td class="negative">-5.01%</td>
+                    <td>$81</td>
+                    <td>$3</td>
+                </tr>
+                
+            </table>
+        </div>
+        
+
+        
+        <div class="section">
+            <h2><span class="emoji">📊</span>基金净值</h2>
+            <table>
+                <tr>
+                    <th>基金代码</th>
+                    <th>最新净值</th>
+                    <th>涨跌幅</th>
+                    <th>净值日期</th>
+                </tr>
+                
+                <tr>
+                    <td>161725</td>
+                    <td>0.5345</td>
+                    <td class="positive">+2.61%</td>
+                    <td>2026-10-23</td>
+                </tr>
+                
+                <tr>
+                    <td>161726</td>
+                    <td>0.3812</td>
+                    <td class="positive">+2.47%</td>
+                    <td>2026-10-23</td>
+                </tr>
+                
+                <tr>
+                    <td>005827</td>
+                    <td>1.3844</td>
+                    <td class="positive">+1.18%</td>
+                    <td>2026-10-23</td>
+                </tr>
+                
+                <tr>
+                    <td>003834</td>
+                    <td>2.3820</td>
+                    <td class="positive">+2.98%</td>
+                    <td>2026-10-23</td>
+                </tr>
+                
+                <tr>
+                    <td>110011</td>
+                    <td>3.9095</td>
+                    <td class="positive">+1.28%</td>
+                    <td>2026-10-23</td>
+                </tr>
+                
+            </table>
+        </div>
+        
+
+        
+        <div class="section">
+            <h2><span class="emoji">💱</span>外汇汇率</h2>
+            <table>
+                <tr>
+                    <th>货币对</th>
+                    <th>汇率</th>
+                    <th>更新时间</th>
+                </tr>
+                
+                <tr>
+                    <td>USD/CNY</td>
+                    <td>6.6900</td>
+                    <td>2026-10-23</td>
+                </tr>
+                
+                <tr>
+                    <td>EUR/USD</td>
+                    <td>1.1200</td>
+                    <td>2026-10-23</td>
+                </tr>
+                
+                <tr>
+                    <td>GBP/USD</td>
+                    <td>1.3400</td>
+                    <td>2026-10-23</td>
+                </tr>
+                
+                <tr>
+                    <td>USD/JPY</td>
+                    <td>156.9200</td>
+                    <td>2026-10-23</td>
+                </tr>
+                
+                <tr>
+                    <td>AUD/USD</td>
+                    <td>0.7020</td>
+                    <td>2026-10-23</td>
+                </tr>
+                
+            </table>
+        </div>
+        
+
+        
+        <div class="section">
+            <h2><span class="emoji">📰</span>最新财经新闻</h2>
+            
+            <div class="news-item">
+                <div class="news-title">CoreWeave本月暴跌37%，瑞银下调目标价至105美元：AI融资风险加剧，市场信心恢复或需数个季度</div>
+                <div class="news-meta">环球市场播报 · 2026-10-23 16:12</div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-title">10月23日美股盘中：三大指数集体下跌，AI融资担忧持续发酵，布伦特原油升破115美元</div>
+                <div class="news-meta">环球市场播报 · 2026-10-23 15:34</div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-title">特朗普称美国和墨西哥即将达成贸易协议</div>
+                <div class="news-meta">环球市场播报 · 2026-10-23 15:30</div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-title">泽连斯基：星链和Starshield在乌克兰的使用依然受限</div>
+                <div class="news-meta">环球市场播报 · 2026-10-23 14:45</div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-title">美国授权从SPR借出最多40万桶原油 应对路易斯安那炼厂供应中断</div>
+                <div class="news-meta">环球市场播报 · 2026-10-23 14:44</div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-title">土耳其股市连续六周下跌，创2008年金融危机以来最长连跌纪录，基金丑闻持续发酵</div>
+                <div class="news-meta">环球市场播报 · 2026-10-23 14:37</div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-title">法国内政部长称巴黎郊外枪击事件是“恐怖主义”行为</div>
+                <div class="news-meta">环球市场播报 · 2026-10-23 14:35</div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-title">美国10月制造业PMI升至56.0，超出市场预期，制造业扩张速度加快</div>
+                <div class="news-meta">环球市场播报 · 2026-10-23 14:33</div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-title">白宫称美国第一夫人促成俄乌在奥列什基局部停火 将便利平民疏散</div>
+                <div class="news-meta">环球市场播报 · 2026-10-23 14:31</div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-title">青海玉树州杂多县发生4.5级地震 震源深度10公里</div>
+                <div class="news-meta">央视 · 2026-10-23 14:24</div>
+            </div>
+            
+        </div>
+        
+
+        <div class="footer">
+            <p>数据来源：新浪财经、Yahoo Finance、CoinGecko、ExchangeRate-API</p>
+            <p>⚠️ 数据仅供参考，投资需谨慎</p>
+        </div>
+    </div>
+</body>
+</html>
+    
